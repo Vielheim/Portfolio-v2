@@ -11,9 +11,9 @@ import MenuItem from "@mui/material/MenuItem";
 import { Code } from "@mui/icons-material";
 import pages from "../common/Pages";
 
-// TODO:
 /**
- * Scroll to top FAB
+ * TODO:
+ * Scroll to top FAB. Will do later when we have more content
  * See https://mui.com/material-ui/react-app-bar/
  */
 

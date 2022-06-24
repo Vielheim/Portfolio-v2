@@ -1,6 +1,8 @@
 // Links to personal pages
 
-// TODO: Update Resume link
+// TODO:
+// Upload Resume onto Drive
+// Update Resume link
 
 const pages = [
     {
