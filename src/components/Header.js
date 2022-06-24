@@ -7,15 +7,12 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { Code } from "@mui/icons-material";
-
-const pages = ["Resume", "GitHub", "LinkedIn"];
+import pages from "../common/Pages";
 
 // TODO:
 /**
- * Set up onClick redirection to the pages
  * Scroll to top FAB
  * See https://mui.com/material-ui/react-app-bar/
  */
@@ -29,10 +26,6 @@ const Header = () => {
 
     const handleCloseNavMenu = () => {
         setAnchorElNav(null);
-    };
-
-    const handleLinkOnClick = () => {
-        handleCloseNavMenu();
     };
 
     return (
@@ -54,6 +47,7 @@ const Header = () => {
                             letterSpacing: ".3rem",
                             color: "inherit",
                             textDecoration: "none",
+                            paddingX: "1rem",
                         }}
                     >
                         Terence Ho
@@ -75,6 +69,7 @@ const Header = () => {
                             letterSpacing: ".3rem",
                             color: "inherit",
                             textDecoration: "none",
+                            paddingX: "1rem",
                         }}
                     >
                         Terence Ho
@@ -119,14 +114,22 @@ const Header = () => {
                             }}
                         >
                             {/* Menu Items */}
-                            {/* TODO: Fix onClick */}
                             {pages.map((page) => (
                                 <MenuItem
-                                    key={page}
-                                    onClick={handleLinkOnClick}
+                                    key={page.title}
+                                    onClick={handleCloseNavMenu}
                                 >
-                                    <Typography textAlign="center">
-                                        {page}
+                                    <Typography
+                                        textAlign="center"
+                                        sx={{
+                                            color: "inherit",
+                                            textDecoration: "none",
+                                        }}
+                                        component="a"
+                                        href={page.url}
+                                        target="_blank"
+                                    >
+                                        {page.title}
                                     </Typography>
                                 </MenuItem>
                             ))}
@@ -142,17 +145,21 @@ const Header = () => {
                         }}
                     >
                         {pages.map((page) => (
-                            <Button
-                                key={page}
-                                onClick={handleLinkOnClick}
+                            <Typography
+                                textAlign="center"
                                 sx={{
                                     my: 2,
-                                    color: "white",
+                                    color: "inherit",
                                     display: "block",
+                                    textDecoration: "none",
+                                    paddingX: "1rem",
                                 }}
+                                component="a"
+                                href={page.url}
+                                target="_blank"
                             >
-                                {page}
-                            </Button>
+                                {page.title}
+                            </Typography>
                         ))}
                     </Box>
                 </Toolbar>
