@@ -32,30 +32,26 @@ theme = responsiveFontSizes(theme);
 
 ScrollTop.propTypes = {
     children: PropTypes.element.isRequired,
-    /**
-     * Injected by the documentation to work in an iframe.
-     * You won't need it on your project.
-     */
-    window: PropTypes.func,
 };
 
 function App(props) {
     return (
         <ThemeProvider theme={theme}>
+            {/* Header */}
             <CssBaseline />
             <Header />
             <Toolbar id="back-to-top-anchor" />
 
+            {/* Content */}
             <Container
                 sx={{
                     width: "80vw",
-                    paddingY: "3rem",
+                    paddingY: "2rem",
                     paddingX: "1rem",
                 }}
             >
                 <Stack direction="column" spacing={10}>
                     <AboutMe />
-
                     <Experiences />
                 </Stack>
             </Container>

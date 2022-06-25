@@ -1,10 +1,17 @@
-import { ListItem, ListItemText, Stack, Typography } from "@mui/material";
+import {
+    SvgIcon,
+    ListItemText,
+    Stack,
+    Typography,
+    Tooltip,
+} from "@mui/material";
 import { Container } from "@mui/system";
 import ExperiencesDetails from "../common/ExperiencesDetails";
 
 const Experiences = () => {
     return (
         <Container>
+            {/* Header */}
             <Typography
                 variant="h4"
                 component="div"
@@ -17,9 +24,10 @@ const Experiences = () => {
                 Experience 🖥
             </Typography>
 
+            {/* Content */}
             <Stack>
                 {ExperiencesDetails.map((experience) => (
-                    <div>
+                    <div key={experience}>
                         {/* Company */}
                         <Typography
                             variant="h5"
@@ -72,6 +80,7 @@ const Experiences = () => {
                         <Container>
                             {experience.descriptionList.map((desc) => (
                                 <ListItemText
+                                    key={desc}
                                     disableTypography={true}
                                     sx={{ display: "list-item" }}
                                 >
@@ -88,6 +97,23 @@ const Experiences = () => {
                         </Container>
 
                         {/* Technologies */}
+                        <Stack
+                            direction="row"
+                            sx={{ paddingY: "1rem" }}
+                            spacing={1.5}
+                        >
+                            {experience.technologies.map((tech) => (
+                                <Tooltip placement="bottom" title={tech.title}>
+                                    <SvgIcon
+                                        key="swift"
+                                        viewBox="0 0 128 128"
+                                        fontSize="large"
+                                    >
+                                        {tech.svg}
+                                    </SvgIcon>
+                                </Tooltip>
+                            ))}
+                        </Stack>
                     </div>
                 ))}
             </Stack>
