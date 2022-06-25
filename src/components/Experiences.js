@@ -26,7 +26,7 @@ const Experiences = () => {
             {/* Content */}
             <Stack spacing={4}>
                 {ExperiencesDetails.map((experience) => (
-                    <div key={experience}>
+                    <div key={experience.company}>
                         {/* Company */}
                         <Typography
                             variant="h5"

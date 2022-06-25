@@ -69,11 +69,11 @@ const TechMap = {
                     x2="40.299"
                     y2="-8.322"
                 >
-                    <stop offset="0" stop-color="#1c93c1"></stop>
-                    <stop offset=".163" stop-color="#2391c0"></stop>
-                    <stop offset=".404" stop-color="#378bbe"></stop>
-                    <stop offset=".696" stop-color="#587eb9"></stop>
-                    <stop offset=".995" stop-color="#7f6cb1"></stop>
+                    <stop offset="0" stopColor="#1c93c1"></stop>
+                    <stop offset=".163" stopColor="#2391c0"></stop>
+                    <stop offset=".404" stopColor="#378bbe"></stop>
+                    <stop offset=".696" stopColor="#587eb9"></stop>
+                    <stop offset=".995" stopColor="#7f6cb1"></stop>
                 </linearGradient>
                 <path
                     fill="url(#kotlin-original-a)"
@@ -87,10 +87,10 @@ const TechMap = {
                     x2="95.988"
                     y2="94.876"
                 >
-                    <stop offset="0" stop-color="#1c93c1"></stop>
-                    <stop offset=".216" stop-color="#2d8ebf"></stop>
-                    <stop offset=".64" stop-color="#587eb9"></stop>
-                    <stop offset=".995" stop-color="#7f6cb1"></stop>
+                    <stop offset="0" stopColor="#1c93c1"></stop>
+                    <stop offset=".216" stopColor="#2d8ebf"></stop>
+                    <stop offset=".64" stopColor="#587eb9"></stop>
+                    <stop offset=".995" stopColor="#7f6cb1"></stop>
                 </linearGradient>
                 <path
                     fill="url(#kotlin-original-b)"
@@ -104,14 +104,14 @@ const TechMap = {
                     x2="92.481"
                     y2="2.116"
                 >
-                    <stop offset="0" stop-color="#c757a7"></stop>
-                    <stop offset=".046" stop-color="#ca5a9e"></stop>
-                    <stop offset=".241" stop-color="#d66779"></stop>
-                    <stop offset=".428" stop-color="#e17357"></stop>
-                    <stop offset=".6" stop-color="#e97c3a"></stop>
-                    <stop offset=".756" stop-color="#ef8324"></stop>
-                    <stop offset=".888" stop-color="#f28817"></stop>
-                    <stop offset=".982" stop-color="#f48912"></stop>
+                    <stop offset="0" stopColor="#c757a7"></stop>
+                    <stop offset=".046" stopColor="#ca5a9e"></stop>
+                    <stop offset=".241" stopColor="#d66779"></stop>
+                    <stop offset=".428" stopColor="#e17357"></stop>
+                    <stop offset=".6" stopColor="#e97c3a"></stop>
+                    <stop offset=".756" stopColor="#ef8324"></stop>
+                    <stop offset=".888" stopColor="#f28817"></stop>
+                    <stop offset=".982" stopColor="#f48912"></stop>
                 </linearGradient>
                 <path
                     fill="url(#kotlin-original-c)"
@@ -144,8 +144,8 @@ const TechMap = {
                     y2="1151.089"
                     gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"
                 >
-                    <stop offset="0" stop-color="#5A9FD4"></stop>
-                    <stop offset="1" stop-color="#306998"></stop>
+                    <stop offset="0" stopColor="#5A9FD4"></stop>
+                    <stop offset="1" stopColor="#306998"></stop>
                 </linearGradient>
                 <linearGradient
                     id="python-original-b"
@@ -156,8 +156,8 @@ const TechMap = {
                     y2="1149.537"
                     gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"
                 >
-                    <stop offset="0" stop-color="#FFD43B"></stop>
-                    <stop offset="1" stop-color="#FFE873"></stop>
+                    <stop offset="0" stopColor="#FFD43B"></stop>
+                    <stop offset="1" stopColor="#FFE873"></stop>
                 </linearGradient>
                 <path
                     fill="url(#python-original-a)"
@@ -179,14 +179,10 @@ const TechMap = {
                 >
                     <stop
                         offset="0"
-                        stop-color="#B8B8B8"
-                        stop-opacity=".498"
+                        stopColor="#B8B8B8"
+                        stopOpacity=".498"
                     ></stop>
-                    <stop
-                        offset="1"
-                        stop-color="#7F7F7F"
-                        stop-opacity="0"
-                    ></stop>
+                    <stop offset="1" stopColor="#7F7F7F" stopOpacity="0"></stop>
                 </radialGradient>
                 <path
                     opacity=".444"
@@ -320,7 +316,7 @@ const TechMap = {
         title: "Unreal Engine 4",
         svg: (
             <>
-                <g fill-rule="evenodd">
+                <g fillRule="evenodd">
                     <path d="M100.61 72.875c-1.063 5.121-5.785 18.266-20.852 25.379l-6.05-6.8-10.212 10.261A37.67 37.67 0 0133.7 86.43c1.086.34 2.203.551 3.336.63 1.672.03 3.485-.583 3.485-3.391V55.974a4.57 4.57 0 00-5.735-4.57c-4.726 1.089-8.504 12.882-8.504 12.882a37.509 37.509 0 0112.98-28.738 38.043 38.043 0 0119.148-8.836c-5.16 2.942-8.058 7.739-8.058 11.762 0 6.477 3.898 5.692 5.054 4.739v37.379c.196.468.453.91.762 1.316a5.528 5.528 0 004.516 2.285c3.902 0 8.968-4.457 8.968-4.457V49.478c0-3.078-2.32-6.793-4.644-8.07 0 0 4.3-.762 7.621 1.777a28.338 28.338 0 011.984-2.183c7.747-7.598 15.04-9.762 21.117-10.844 0 0-11.047 8.683-11.047 20.332 0 8.664.223 29.789.223 29.789 4.098 3.957 10.195-1.758 15.703-7.403z"></path>
                     <path d="M64 2.383C29.973 2.383 2.383 29.973 2.383 64S29.973 125.617 64 125.617 125.617 98.027 125.617 64 98.027 2.383 64 2.383zm0 120.77C31.332 123.153 4.848 96.669 4.848 64 4.852 31.333 31.336 4.849 64.004 4.853c32.668 0 59.148 26.484 59.148 59.152S96.668 123.157 64 123.157z"></path>
                 </g>

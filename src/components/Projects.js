@@ -17,7 +17,7 @@ const Projects = () => {
             {/* Content */}
             <Stack spacing={4}>
                 {ProjectDetails.map((project) => (
-                    <div key={project}>
+                    <div key={project.title}>
                         {/* Title */}
                         <Typography
                             variant="h5"

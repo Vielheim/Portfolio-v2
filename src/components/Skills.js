@@ -17,7 +17,7 @@ const Skills = () => {
             {/* Content */}
             <Stack spacing={2}>
                 {SkillDetails.map((category) => (
-                    <div key={category}>
+                    <div key={category.title}>
                         <Typography
                             variant="h6"
                             component="div"
