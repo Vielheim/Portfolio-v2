@@ -1,10 +1,10 @@
 import { Container, Divider, Typography } from "@mui/material";
 import AboutMeDetails from "../common/AboutMeDetails";
 
-// TODO: Update
 const AboutMe = () => {
     return (
         <Container>
+            {/* Title */}
             <Typography
                 variant="h4"
                 component="div"
@@ -16,6 +16,7 @@ const AboutMe = () => {
                 {AboutMeDetails.title}
             </Typography>
 
+            {/* SubTitle */}
             <Typography
                 variant="h5"
                 component="div"
@@ -33,6 +34,7 @@ const AboutMe = () => {
                 }}
             />
 
+            {/* Body */}
             {AboutMeDetails.body.map((line) => (
                 <Typography
                     key={line}
@@ -48,6 +50,7 @@ const AboutMe = () => {
                 </Typography>
             ))}
 
+            {/* Closing */}
             <Typography
                 variant="body1"
                 component="div"
