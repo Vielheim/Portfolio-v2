@@ -6,7 +6,7 @@
 
 const pages = [
     {
-        title: "Resume",
+        title: "Resume (To be updated)",
         url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
     },
     {
