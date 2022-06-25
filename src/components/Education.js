@@ -1,12 +1,10 @@
 import {
-    Stack,
     Accordion,
     AccordionSummary,
     AccordionDetails,
     Typography,
     ListItemText,
     Container,
-    Divider,
 } from "@mui/material";
 import SectionTitle from "./SectionTitle";
 import SectionSubtitle from "./SectionSubtitle";
