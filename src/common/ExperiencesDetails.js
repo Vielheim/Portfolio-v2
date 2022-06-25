@@ -1,6 +1,5 @@
 import TechMap from "./TechMap";
 
-// TODO: Update
 const ExperiencesDetails = [
     {
         company: "Google",
