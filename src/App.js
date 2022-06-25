@@ -48,7 +48,7 @@ function App(props) {
             {/* Content */}
             <Container
                 sx={{
-                    width: "80vw",
+                    // width: "90vw",
                     paddingTop: "2rem",
                     paddingBottom: "5rem",
                     paddingX: "1rem",
