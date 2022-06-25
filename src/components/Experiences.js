@@ -7,21 +7,36 @@ import {
 } from "@mui/material";
 import { Container } from "@mui/system";
 import ExperiencesDetails from "../common/ExperiencesDetails";
+import AppColors from "../common/AppColors";
 
 const Experiences = () => {
     return (
         <Container>
-            {/* Header */}
+            {/* Title */}
             <Typography
                 variant="h4"
                 component="div"
                 gutterBottom
                 sx={{
                     fontFamily: "monospace",
-                    paddingBottom: "1rem",
                 }}
             >
                 Experience 🖥
+            </Typography>
+
+            {/* Subtitle */}
+            <Typography
+                variant="subtitle"
+                component="div"
+                gutterBottom
+                sx={{
+                    fontFamily: "monospace",
+                    paddingBottom: "1rem",
+                    fontStyle: "oblique",
+                    color: AppColors.primary,
+                }}
+            >
+                It ain't much, but it's honest work
             </Typography>
 
             {/* Content */}
@@ -59,6 +74,7 @@ const Experiences = () => {
                                 gutterBottom
                                 sx={{
                                     fontFamily: "monospace",
+                                    color: AppColors.primary,
                                 }}
                             >
                                 {experience.role}
@@ -70,6 +86,7 @@ const Experiences = () => {
                                 gutterBottom
                                 sx={{
                                     fontFamily: "monospace",
+                                    color: AppColors.primary,
                                 }}
                             >
                                 {experience.period}
@@ -88,6 +105,7 @@ const Experiences = () => {
                                         variant="body1"
                                         sx={{
                                             fontFamily: "monospace",
+                                            color: AppColors.secondary,
                                         }}
                                     >
                                         {desc}

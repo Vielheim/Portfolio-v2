@@ -1,5 +1,6 @@
 import { Container, Divider, Typography } from "@mui/material";
 import AboutMeDetails from "../common/AboutMeDetails";
+import AppColors from "../common/AppColors";
 
 const AboutMe = () => {
     return (
@@ -44,6 +45,7 @@ const AboutMe = () => {
                     sx={{
                         fontFamily: "monospace",
                         paddingY: "0.3rem",
+                        color: AppColors.primary,
                     }}
                 >
                     {line}
@@ -57,6 +59,7 @@ const AboutMe = () => {
                 gutterBottom
                 sx={{
                     fontFamily: "monospace",
+                    color: AppColors.primary,
                 }}
             >
                 {AboutMeDetails.closing}
