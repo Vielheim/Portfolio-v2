@@ -16,6 +16,7 @@ import AboutMe from "./components/AboutMe";
 import Experiences from "./components/Experiences";
 import ScrollTop from "./components/ScrollTop";
 import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 
 let theme = createTheme({
     palette: {
@@ -56,6 +57,7 @@ function App(props) {
                     <AboutMe />
                     <Experiences />
                     <Projects />
+                    <Skills />
                 </Stack>
             </Container>
 
