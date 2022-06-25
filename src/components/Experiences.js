@@ -1,10 +1,4 @@
-import {
-    SvgIcon,
-    ListItemText,
-    Stack,
-    Typography,
-    Tooltip,
-} from "@mui/material";
+import { ListItemText, Stack, Typography } from "@mui/material";
 import { Container } from "@mui/system";
 import ExperiencesDetails from "../common/ExperiencesDetails";
 import AppColors from "../common/AppColors";
