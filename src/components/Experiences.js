@@ -8,36 +8,20 @@ import {
 import { Container } from "@mui/system";
 import ExperiencesDetails from "../common/ExperiencesDetails";
 import AppColors from "../common/AppColors";
+import SectionTitle from "./SectionTitle";
+import SectionSubtitle from "./SectionSubtitle";
+import TechList from "./TechList";
 
 const Experiences = () => {
     return (
         <Container>
             {/* Title */}
-            <Typography
-                variant="h4"
-                component="div"
-                gutterBottom
-                sx={{
-                    fontFamily: "monospace",
-                }}
-            >
-                Experience 🖥
-            </Typography>
+            <SectionTitle>Experience 💼</SectionTitle>
 
             {/* Subtitle */}
-            <Typography
-                variant="subtitle"
-                component="div"
-                gutterBottom
-                sx={{
-                    fontFamily: "monospace",
-                    paddingBottom: "1rem",
-                    fontStyle: "oblique",
-                    color: AppColors.primary,
-                }}
-            >
+            <SectionSubtitle>
                 It ain't much, but it's honest work
-            </Typography>
+            </SectionSubtitle>
 
             {/* Content */}
             <Stack spacing={4}>
@@ -115,23 +99,7 @@ const Experiences = () => {
                         </Container>
 
                         {/* Technologies */}
-                        <Stack
-                            direction="row"
-                            sx={{ paddingY: "1rem" }}
-                            spacing={1.5}
-                        >
-                            {experience.technologies.map((tech) => (
-                                <Tooltip placement="bottom" title={tech.title}>
-                                    <SvgIcon
-                                        key="swift"
-                                        viewBox="0 0 128 128"
-                                        fontSize="large"
-                                    >
-                                        {tech.svg}
-                                    </SvgIcon>
-                                </Tooltip>
-                            ))}
-                        </Stack>
+                        <TechList technologies={experience.technologies} />
                     </div>
                 ))}
             </Stack>

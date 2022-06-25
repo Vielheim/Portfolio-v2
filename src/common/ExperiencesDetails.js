@@ -45,6 +45,7 @@ const ExperiencesDetails = [
         technologies: [
             TechMap.react,
             TechMap.nodejs,
+            TechMap.express,
             TechMap.mysql,
             TechMap.git,
         ],

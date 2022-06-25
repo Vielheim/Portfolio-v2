@@ -15,6 +15,7 @@ import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
 import Experiences from "./components/Experiences";
 import ScrollTop from "./components/ScrollTop";
+import Projects from "./components/Projects";
 
 let theme = createTheme({
     palette: {
@@ -46,13 +47,15 @@ function App(props) {
             <Container
                 sx={{
                     width: "80vw",
-                    paddingY: "2rem",
+                    paddingTop: "2rem",
+                    paddingBottom: "5rem",
                     paddingX: "1rem",
                 }}
             >
                 <Stack direction="column" spacing={10}>
                     <AboutMe />
                     <Experiences />
+                    <Projects />
                 </Stack>
             </Container>
 
