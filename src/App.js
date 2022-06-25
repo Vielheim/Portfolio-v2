@@ -1,28 +1,36 @@
-import { Container, createTheme, ThemeProvider } from "@mui/material";
+import {
+    Container,
+    createTheme,
+    responsiveFontSizes,
+    ThemeProvider,
+} from "@mui/material";
 import "./App.css";
 import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
 
-function App() {
-    const theme = createTheme({
-        palette: {
-            type: "light",
-            primary: {
-                main: "#fafafa",
-            },
-            secondary: {
-                main: "#fff",
-            },
+let theme = createTheme({
+    palette: {
+        type: "light",
+        primary: {
+            main: "#fafafa",
         },
-    });
+        secondary: {
+            main: "#fff",
+        },
+    },
+});
 
+theme = responsiveFontSizes(theme);
+
+function App() {
     return (
         <ThemeProvider theme={theme}>
             <Header />
             <Container
                 sx={{
                     width: "80vw",
-                    padding: "3rem",
+                    paddingY: "3rem",
+                    paddingX: "1rem",
                 }}
             >
                 <AboutMe />

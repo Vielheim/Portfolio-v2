@@ -124,6 +124,7 @@ const Header = () => {
                                         sx={{
                                             color: "inherit",
                                             textDecoration: "none",
+                                            fontFamily: "monospace",
                                         }}
                                         component="a"
                                         href={page.url}
@@ -146,12 +147,14 @@ const Header = () => {
                     >
                         {pages.map((page) => (
                             <Typography
+                                key={page.title}
                                 textAlign="center"
                                 sx={{
                                     my: 2,
                                     color: "inherit",
                                     display: "block",
                                     textDecoration: "none",
+                                    fontFamily: "monospace",
                                     paddingX: "1rem",
                                 }}
                                 component="a"
