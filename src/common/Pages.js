@@ -6,8 +6,8 @@
 
 const pages = [
     {
-        title: "Resume (To be updated)",
-        url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
+        title: "Resume",
+        url: "https://drive.google.com/file/d/1RaZbk03IJMLGzRoICo3zpsUIOFCkHOdH/view?usp=sharing",
     },
     {
         title: "GitHub",
