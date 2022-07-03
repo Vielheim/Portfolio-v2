@@ -5,7 +5,7 @@ const ProjectDetails = [
         title: "TourMate",
         description:
             "TourMate is an all-in-one collaborative trip management application that aims to make planning group trips fun and effortless. Features a shared planning system, version control, voting and comments system.",
-        technologies: [TechMap.swift, TechMap.git],
+        technologies: [TechMap.swift, TechMap.firebase, TechMap.git],
     },
     {
         title: "SmartBrain",
