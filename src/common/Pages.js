@@ -1,9 +1,5 @@
 // Links to personal pages
 
-// TODO:
-// Upload Resume onto Drive
-// Update Resume link
-
 const pages = [
     {
         title: "Resume",
