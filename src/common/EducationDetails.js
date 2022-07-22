@@ -2,7 +2,12 @@ const EducationDetails = [
     {
         term: "Academic Year 4 (Semester 1)",
         period: "Aug - Dec 2022",
-        modules: ["To be updated"],
+        modules: [
+            "CS3216 Software Product Engineering for Digital Markets",
+            "CS3219 Software Engineering Principles and Patterns",
+            "CS4248 Natural Language Processing (TBD)",
+            "CFG3001 Career Advancement",
+        ],
     },
     {
         term: "Summer Vacation",
