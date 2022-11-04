@@ -14,6 +14,20 @@ const ProjectDetails = [
         ],
     },
     {
+        title: "CleanCheeks",
+        description:
+            "CleanCheeks is a Progressive Web App that is designed for mobile browsers to help users find clean toilets in NUS. A project of CS3216 Software Product Engineering for Digital Markets",
+        technologies: [
+            TechMap.typescript,
+            TechMap.javascript,
+            TechMap.react,
+            TechMap.express,
+            TechMap.nodejs,
+            TechMap.postgresql,
+            TechMap.git,
+        ],
+    },
+    {
         title: "Peerprep",
         description:
             "Peerprep is a collaborative codepad that allows users to match with others and practice (Easy, Medium and Hard) LeetCode-style questions. Features a codepad and chat system that updates in real-time. Built on a Microservice architecture. A project of CS3219 Software Engineering Principles and Patterns",
@@ -57,7 +71,7 @@ const ProjectDetails = [
     },
 ];
 
-// UNUSED
+/*
 const ARCHIVED = [
     {
         title: "Rest In Peace",
@@ -79,5 +93,6 @@ const ARCHIVED = [
         ],
     },
 ];
+*/
 
 export default ProjectDetails;
