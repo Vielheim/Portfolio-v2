@@ -3,7 +3,7 @@
 const pages = [
     {
         title: "Resume",
-        url: "https://drive.google.com/file/d/1KV7L1I70ZcxfxyKwhGtgCurNyU7Mo8SY/view?usp=sharing",
+        url: "https://drive.google.com/file/d/19cehdm3aS2qz-4Ws3bCIjp9kwdLY1NyJ/view?usp=sharing",
     },
     {
         title: "GitHub",

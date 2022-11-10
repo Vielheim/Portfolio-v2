@@ -6,7 +6,6 @@ const EducationDetails = [
             "CS3216 Software Product Engineering for Digital Markets",
             "CS3219 Software Engineering Principles and Patterns",
             "CS4248 Natural Language Processing",
-            "CFG3001 Career Advancement",
         ],
     },
     {
