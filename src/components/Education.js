@@ -11,6 +11,7 @@ import SectionSubtitle from "./SectionSubtitle";
 import EducationDetails from "../common/EducationDetails";
 import AppColors from "../common/AppColors";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { sans_serif } from "../common/Fonts";
 
 const Education = () => {
     return (
@@ -46,7 +47,7 @@ const Education = () => {
                                     <Typography
                                         variant="body1"
                                         sx={{
-                                            fontFamily: "monospace",
+                                            fontFamily: sans_serif,
                                             color: AppColors.secondary,
                                         }}
                                     >

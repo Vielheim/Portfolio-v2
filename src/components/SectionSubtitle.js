@@ -1,5 +1,6 @@
 import { Typography } from "@mui/material";
 import AppColors from "../common/AppColors";
+import { monospace } from "../common/Fonts";
 
 const SectionSubtitle = (props) => {
     return (
@@ -8,7 +9,7 @@ const SectionSubtitle = (props) => {
             component="div"
             gutterBottom
             sx={{
-                fontFamily: "monospace",
+                fontFamily: monospace,
                 paddingBottom: "1rem",
                 fontStyle: "oblique",
                 color: AppColors.primary,

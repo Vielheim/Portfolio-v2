@@ -1,6 +1,7 @@
 import { Container, Divider, Typography } from "@mui/material";
 import AboutMeDetails from "../common/AboutMeDetails";
 import AppColors from "../common/AppColors";
+import { monospace, sans_serif } from "../common/Fonts";
 
 const AboutMe = () => {
     return (
@@ -11,7 +12,7 @@ const AboutMe = () => {
                 component="div"
                 gutterBottom
                 sx={{
-                    fontFamily: "monospace",
+                    fontFamily: monospace,
                 }}
             >
                 {AboutMeDetails.title}
@@ -23,7 +24,7 @@ const AboutMe = () => {
                 component="div"
                 gutterBottom
                 sx={{
-                    fontFamily: "monospace",
+                    fontFamily: monospace,
                 }}
             >
                 {AboutMeDetails.subtitle}
@@ -39,11 +40,11 @@ const AboutMe = () => {
             {AboutMeDetails.body.map((line) => (
                 <Typography
                     key={line}
-                    variant="body1"
+                    variant="subtitle1"
                     component="div"
                     gutterBottom
                     sx={{
-                        fontFamily: "monospace",
+                        fontFamily: sans_serif,
                         paddingY: "0.3rem",
                         color: AppColors.primary,
                     }}
@@ -54,11 +55,11 @@ const AboutMe = () => {
 
             {/* Closing */}
             <Typography
-                variant="body1"
+                variant="subtitle1"
                 component="div"
                 gutterBottom
                 sx={{
-                    fontFamily: "monospace",
+                    fontFamily: sans_serif,
                     color: AppColors.primary,
                 }}
             >

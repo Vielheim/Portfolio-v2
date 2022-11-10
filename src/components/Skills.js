@@ -4,6 +4,7 @@ import SectionTitle from "./SectionTitle";
 import SkillDetails from "../common/SkillsDetails";
 import { Stack, Typography } from "@mui/material";
 import AppColors from "../common/AppColors";
+import { sans_serif, monospace } from "../common/Fonts";
 
 const Skills = () => {
     return (
@@ -23,18 +24,18 @@ const Skills = () => {
                             component="div"
                             gutterBottom
                             sx={{
-                                fontFamily: "monospace",
+                                fontFamily: monospace,
                             }}
                         >
                             {category.title}
                         </Typography>
 
                         <Typography
-                            variant="body1"
+                            variant="subtitle1"
                             component="div"
                             gutterBottom
                             sx={{
-                                fontFamily: "monospace",
+                                fontFamily: sans_serif,
                                 color: AppColors.secondary,
                             }}
                         >

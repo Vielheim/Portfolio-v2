@@ -5,6 +5,7 @@ import AppColors from "../common/AppColors";
 import SectionTitle from "./SectionTitle";
 import SectionSubtitle from "./SectionSubtitle";
 import TechList from "./TechList";
+import { monospace, sans_serif } from "../common/Fonts";
 
 const Experiences = () => {
     return (
@@ -27,7 +28,7 @@ const Experiences = () => {
                             component="div"
                             gutterBottom
                             sx={{
-                                fontFamily: "monospace",
+                                fontFamily: monospace,
                             }}
                         >
                             {experience.company}
@@ -51,7 +52,7 @@ const Experiences = () => {
                                 component="div"
                                 gutterBottom
                                 sx={{
-                                    fontFamily: "monospace",
+                                    fontFamily: monospace,
                                     color: AppColors.primary,
                                 }}
                             >
@@ -63,7 +64,7 @@ const Experiences = () => {
                                 component="div"
                                 gutterBottom
                                 sx={{
-                                    fontFamily: "monospace",
+                                    fontFamily: monospace,
                                     color: AppColors.primary,
                                 }}
                             >
@@ -80,9 +81,9 @@ const Experiences = () => {
                                     sx={{ display: "list-item" }}
                                 >
                                     <Typography
-                                        variant="body1"
+                                        variant="subtitle1"
                                         sx={{
-                                            fontFamily: "monospace",
+                                            fontFamily: sans_serif,
                                             color: AppColors.secondary,
                                         }}
                                     >

@@ -4,6 +4,7 @@ import SectionSubtitle from "./SectionSubtitle";
 import ProjectDetails from "../common/ProjectDetails";
 import TechList from "./TechList";
 import AppColors from "../common/AppColors";
+import { sans_serif, monospace } from "../common/Fonts";
 
 const Projects = () => {
     return (
@@ -24,7 +25,7 @@ const Projects = () => {
                             component="div"
                             gutterBottom
                             sx={{
-                                fontFamily: "monospace",
+                                fontFamily: monospace,
                             }}
                         >
                             {project.title}
@@ -32,9 +33,9 @@ const Projects = () => {
 
                         {/* Description */}
                         <Typography
-                            variant="body1"
+                            variant="subtitle1"
                             sx={{
-                                fontFamily: "monospace",
+                                fontFamily: sans_serif,
                                 color: AppColors.secondary,
                             }}
                         >

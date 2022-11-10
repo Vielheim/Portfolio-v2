@@ -1,4 +1,5 @@
 import { Typography } from "@mui/material";
+import { monospace } from "../common/Fonts";
 
 const SectionTitle = (props) => {
     return (
@@ -7,7 +8,7 @@ const SectionTitle = (props) => {
             component="div"
             gutterBottom
             sx={{
-                fontFamily: "monospace",
+                fontFamily: monospace,
             }}
         >
             {props.children}
